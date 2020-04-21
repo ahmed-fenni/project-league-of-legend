@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>League Of Runes</title>
+     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+	<header>
+		
+		<img id="logo" src="https://www.riotgames.com/darkroom/800/da85e92aaf87f26181ded41afe03b1dc:aaeeccb4b282b616ef907ec68c40f2b7/lol-logo-rendered-hi-res.png">
+
+		<nav>
+			<a href="#">Champions</a>
+			
+			
+		</nav>
+
+	</header>
+
+	<section id="slideshow">
+
+		<section id="content">
+			</div>
+
+ <form name="login" onsubmit="return validateForm() ;" method="post">
+
+ <ul>
+  <input class="username" type="text" name="username">
+ </li>
+
+ <input class="password" type="password" name="password">
+ </li>
+ </ul>
+
+<input type="button" class="submit" value="Log In" name="submit" onclick="validate()">
+</form>
+</div> 
+        <script>
+    var count= 2;
+
+function validate()
+{
+	var un = document.login.username.value;
+	var pw = document.login.password.value;
+	var valid = false;
+	var usernameArray = ["RBKTN3", "HADOUN"];
+	var passwordArray = ["RBKTN3", "HADOUN"];
+	for (var i = 0; i < usernameArray.length; i++)
+ {
+
+	if ((un == usernameArray[i]) && (pw == passwordArray[i]))
+	{
+		valid = true;
+		break;
+	}
+}
+	if (valid)
+	{
+		
+		window.location = "file:///C:/Users/DaDan/Desktop/ahmed%20fenni%20project/project-league-of-legends/after%20login/login.html";
+		return false;
+	}
+
+	if (count >= 1)
+	{
+		alert("Wrong password or username")
+		count--;
+	}
+	
+}
+        </script>
+	
+			<h1>Pick your champion and Start </h1>
+
+
+			<p>If you want to learn about us click the button</p>
+
+			<button>About Us</button>
+      
+		</section>
+
+<script>
+
+$(document).ready(function(){
+   $("a").click(function(){
+   	alert("login  First")
+   })
+  $("button").click(function(){
+    alert("login  First")
+  });
+});
+
+</script>
+		
+		<img id="slide" src="https://www.mobafire.com/images/champion/skins/landscape/rengar-guardian-of-the-sands.jpg">
+
+	</section>
+
+	
+
+	 
+
+</body>
+</html>
+
